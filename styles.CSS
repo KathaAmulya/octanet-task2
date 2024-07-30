@@ -1,0 +1,109 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/paper-bag.png') repeat;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-size: 2em;
+}
+
+.add-task {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#new-task {
+    padding: 10px;
+    border: 2px solid #ffb74d;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1em;
+}
+
+#add-button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-button:hover {
+    background-color: #e65c50;
+}
+
+.todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    background: #ffecb3;
+    border: 2px solid #ffb74d;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 180px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+    background: #fff9c4;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #ff6f61;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Decorative Elements */
+.container::before {
+    content: '🌟';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+}
+
+.container::after {
+    content: '✨';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 2em;
+}
